@@ -85,6 +85,7 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
     }
 
     final web.HTMLVideoElement videoElement = web.HTMLVideoElement()
+    ..crossOrigin = 'anonymous'
       ..id = 'videoElement-$playerId'
       ..style.border = 'none'
       ..style.height = '100%'
